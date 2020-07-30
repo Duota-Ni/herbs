@@ -1,4 +1,4 @@
-var host = "https://herbs.ayatsuji.top:8081/";
+var host = "your https url";
 function httpGet(url, params, success, fail) {
   request(url, params, "GET", success, fail)
 }
