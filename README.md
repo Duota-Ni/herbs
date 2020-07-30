@@ -1,4 +1,4 @@
-### 本草录小程序
+### herbs
 
 #### 介绍
 将地图、诗词、故事、药膳、入药分类加入到中医药科普的工作中，结合多种中华传统文化，增加科普的趣味性，实现中医药科普方式的创新。
@@ -58,5 +58,8 @@
 7)	wx.showToast：加载提示
 8)	wx.stopPullDownRefresh：暂停下拉刷新
 
+#### 小程序码
+欢迎体验评价
+![appletcode](https://github.com/Duota-Ni/herbs/blob/dev/IntroductionPicture/appletcode.png?raw=true)
 
 
