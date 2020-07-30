@@ -10,22 +10,22 @@
 图1：省份特色地图：将各省份特色草药用地图的形式展示，用户点击时即可看到该省份对应的草药  
 图2：具体草药地图：搜索/点击时显示具体草药信息的同时将该草药分布地区的图片显示出来  
 图3：医药学家地图：进入页面时使用IIEFs实现缩放动画，点击图表弹出医生姓名标签，点击标签跳转至对应的医生详情页  
-![picture1](https://github.com/Duota-Ni/herbs/blob/dev/IntroductionPicture/1.png?raw=true)
+![picture1](https://github.com/Duota-Ni/herbs/blob/dev/IntroductionPicture/1.png?raw=true)  
 图4：小程序收录于草药相关的诗词，在首页用轮播图作推荐，点击图片跳转到相应的草药详情页  
 图5：草药诗词板块集合草药相关诗词，点击展开收起可显示隐藏诗词内容，点击图片或草药名跳转至相应的草药详情页  
-![picture2](https://github.com/Duota-Ni/herbs/blob/dev/IntroductionPicture/2.png?raw=true)
+![picture2](https://github.com/Duota-Ni/herbs/blob/dev/IntroductionPicture/2.png?raw=true)  
 
 #### 产品结构  
 产品定位：科普类小程序  
 目标用户：对中医药感兴趣但不了解的人群  
 核心诉求：以有趣的方式从身边出发，学到中医药相关知识，对自身有所裨益，同时可涉猎多元文化（如地理、诗词、中药故事等）  
 产品结构图：  
-![productStructure](https://github.com/Duota-Ni/herbs/blob/dev/IntroductionPicture/productStructure.png?raw=true)
+![productStructure](https://github.com/Duota-Ni/herbs/blob/dev/IntroductionPicture/productStructure.png?raw=true)  
 
 #### 软件架构
 总体的实现思路是：用户操作（搜索/点击）触发关键词key →小程序端通过后端接口获取数据→后端查询数据库并以json形式返回→小程序逻辑层解析数据并在视图层渲染显示。  
 总体逻辑框架图：  
-![technicalFramework](https://github.com/Duota-Ni/herbs/blob/dev/IntroductionPicture/technicalFramework.png?raw=true)
+![technicalFramework](https://github.com/Duota-Ni/herbs/blob/dev/IntroductionPicture/technicalFramework.png?raw=true)  
 
 ####  小程序端技术实现  
 小程序前端实现了获取服务器数据并渲染，实时获取搜索提示词，动态绘制canvas地图，利用腾讯地图渲染医生地理数据等。  
