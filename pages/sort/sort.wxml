@@ -1,0 +1,17 @@
+<!--pages/sort/sort.wxml-->
+<scroll-view class="jump_list" scroll-into-view="{{toView}}" scroll-y="true" scroll-with-animation="true">
+	<view class="box" wx:for="{{type}}" wx:key="id" id="item{{item.id}}">
+		<view class="name">{{item.name}}</view>
+		<text class="detail">{{item.content}}</text>
+			<view class="tipsbox">
+	<text class="tipstitle">注：</text><text class="tipscontent">此分类数据来源于中药大全</text>
+	</view>
+	</view>
+</scroll-view>
+<image class="nav" src="/images/icons/guide.png" bindtap="actionSheetTap"></image>
+<action-sheet class="actionSheetItemsout" hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange">
+	<view class="actionSheetItemsin">
+		<action-sheet-item bindtap="jumpTo" wx:for="{{type}}" wx:key="id" data-opt="item{{item.id}}">{{item.name}}</action-sheet-item>
+	</view>
+	<action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>

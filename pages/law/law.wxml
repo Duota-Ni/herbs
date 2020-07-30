@@ -1,0 +1,12 @@
+<!--pages/law/law.wxml-->
+<view class="container">
+	<view class="h1">{{title}}</view>
+	<text class="h2">{{subtitle}}</text>
+	<view class="detail">
+		<text class="d0" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{overview}}\n</text>
+		<block wx:for="{{law}}" wx:key="id">
+			<text class="d1">\n第{{item.title}}条\n</text>
+			<text class="d2" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.content}}</text>
+		</block>
+	</view>
+</view>

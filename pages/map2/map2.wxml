@@ -1,0 +1,17 @@
+<view class="container">
+<map 
+id="map" 
+latitude="{{latitude}}"
+longitude="{{longitude}}"
+scale="{{scale}}"  
+markers="{{markers}}"  
+bindcallouttap="bindcallouttap" 
+show-location >
+</map>
+<view class="h1">
+<text>医者或竹杖芒鞋五湖四海采药，或居于一隅开馆济世，无论何时，月终归是故乡明。\n</text>
+<text>Tips:</text>
+<text>
+<text class="h2">轻触医生图标</text>发现医者之名，所在地即为其故居，愿寻更多者，<text class="h2">再点击弹出的标签</text>，阅读医者生平。</text>
+</view>
+</view>

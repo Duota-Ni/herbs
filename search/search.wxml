@@ -1,0 +1,57 @@
+<!--搜索框-->
+<view class="search-bar">
+	<view class="search-bar__form">
+		<view class="search-bar__box">
+			<icon class="icon-search_in-box" type="search" size="14"></icon>
+			<input type="text" class="search-bar__input" placeholder="请输入搜索关键词" value="{{wxSearchData.value}}" bindinput="wxSearchInput" bindconfirm="wxSearchConfirm" ></input>
+			<view class="icon-clear" wx:if="{{wxSearchData.value.length > 0}}" bindtap="wxSearchClear">
+				<icon type="clear" size="14"></icon>
+			</view>
+		</view>
+	</view>
+	<view class="search-bar__cancel-btn" bindtap="wxSearchConfirm">
+		<text wx:if="{{wxSearchData.value.length>0}}" data-key="search">搜索</text>
+		<text wx:else data-key="back">取消</text>
+	</view>
+</view>
+
+
+<view class="wxSearch"  style="'block';height:{{wxSearchData.view.searchHeight}}px;top:{{wxSearchData.view.barHeight}}px;" >
+	<!--搜索框下面提示栏部分-->
+	<view class="wxSearchInner">
+
+		<!--搜索提示-->
+		<view class="wxSearchMindKey">
+			<view class="wxSearchMindKeyList">
+				<block wx:for="{{wxSearchData.tipKeys}}">
+					<view class="wxSearchMindKeyItem" bindtap="wxSearchKeyTap" data-key="{{item.name}}">{{item.name}}</view>
+				</block>
+			</view>
+		</view>
+
+		<!--搜索历史-->
+		<view wx:if="{{wxSearchData.his[0]}}" class="wxSearchHistory" style="display:{{wxSearchData.value.length>0?'none':'block'}}">
+			<view class="wxSearchHistoryItem">
+				<text class="wxSearchHistoryItemTitle">搜索历史</text>
+				<icon type="clear" bindtap="wxSearchDeleteAll" size="18"></icon>
+			</view>
+			<view class="wxSearchKeyList">
+				<block wx:for="{{wxSearchData.his}}">
+					<view class="wxSearchKeyItem" bindtap="wxSearchKeyTap" data-key="{{item}}">{{item}}</view>
+				</block>
+			</view>
+		</view>
+
+		<!--搜索热点-->
+		<view class="wxSearchKey" style="display:{{wxSearchData.value.length>0?'none':'block'}}">
+			<text wx:if="{{wxSearchData.hotKeys[0]}}" class="wxSearchHotKeyTitle">搜索热点</text>
+			<view class="wxSearchKeyList">
+				<block wx:for='{{wxSearchData.hotKeys}}'>
+					<view class="wxSearchKeyItem" bindtap="wxSearchKeyTap" data-key="{{item}}">{{item}}</view>
+				</block>
+			</view>
+		</view>
+
+	</view>
+
+</view>

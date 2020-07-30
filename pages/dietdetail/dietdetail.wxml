@@ -1,0 +1,20 @@
+<view class="container">
+<block wx:if="{{hasData}}">
+	<view class="dietdetail">
+		<view class="name">{{dietdetail.name}}</view>
+		<view class="text">
+			<text class="title">功效：\n</text><text>{{dietdetail.efficacy}}\n</text>
+			<text class="title">配方：\n</text><text>{{dietdetail.ingredient}}\n</text>
+			<text class="title">制法：\n</text><text>{{dietdetail.cooking}}\n</text>
+			<text class="title">用法：\n</text><text>{{dietdetail.frequency}}\n</text>
+			<text class="title">适用病症：\n</text><text>{{dietdetail.disease}}\n</text>
+		</view>
+	</view>
+	<view class="tipsbox">
+	<text class="tipstitle">注：</text><text class="tipscontent">此药膳数据来源于医药网</text>
+	</view>
+</block>
+<block wx:else>
+	<view class="else">该药膳暂未收录，请重新搜索</view>
+</block>
+</view>

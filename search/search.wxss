@@ -1,0 +1,121 @@
+.wxSearch{
+  position: absolute;
+  top:43px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top:1px #eee solid;
+  background-color: rgba(200,200,200,0.1);
+  z-index: 9999;
+}
+
+/**搜索框下面提示栏部分*/
+.wxSearchInner{
+  background-color: #fff;
+}
+
+/**MindKey搜索提示（联想关键词)内容*/
+.wxSearchMindKeyItem{
+  padding: 10px 5px 10px 15px;
+  margin-left: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  font-size: 13px;
+  color: #69cfff;
+}
+
+/**History搜索历史标题栏*/
+.wxSearchHistoryItem{
+  padding:10px 5px 5px 10px;
+  display: flex;
+}
+.wxSearchHistoryItemTitle{
+  flex:8;
+  font-size:13px;
+}
+
+/**HotKey搜索热点标题*/
+.wxSearchHotKeyTitle{
+  display: block;
+  padding: 10px 5px 5px 10px;
+  font-size: 13px;
+  text-align: left;
+}
+
+/**标签样式History&HotKey都有*/
+.wxSearchKeyList{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.wxSearchKeyItem{
+  flex:0 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  text-align: center;
+  border:1px solid #69d0ffb0;
+  margin:6px;
+  padding: 4px 5px 4px 5px;
+  border-radius: 15rpx;
+  color: #69cfff;
+}
+
+.search-bar{
+  position: relative;
+  padding: 8px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.icon-search_in-box{
+  position: absolute;
+  left:10px;
+  top: 7px;
+}
+
+/**搜索框的格（表单）*/
+.search-bar__form{
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex:auto;
+  flex:auto;
+  border-radius: 10px;
+  background: #eee;
+}
+
+.search-bar__box{
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.search-bar__input{
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+.icon-clear{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding:7px 8px;
+  font-size: 0;
+}
+
+/**右侧文字按钮（搜索/返回*/
+.search-bar__cancel-btn{
+  margin-left: 10px;
+  line-height: 28px;
+  color: #69cfff;
+  white-space: nowrap;
+}

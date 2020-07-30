@@ -1,0 +1,22 @@
+.head{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.head image{
+  width:50%;
+  height: 355rpx;
+}
+ec-canvas {
+  width: 50%;
+  height: 355rpx;
+}
+.detailcontent{
+  color: #69cfff;
+}
+.error{
+  color: #69cfff;
+}
+ 
+ 

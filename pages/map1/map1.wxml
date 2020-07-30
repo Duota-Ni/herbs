@@ -1,0 +1,6 @@
+<view class="container">
+<block wx:if="{{ec.lazyLoad}}">
+	<ec-canvas type="2d" id="mychart" canvas-id="mychart-area" ec="{{ec}}"></ec-canvas>
+	</block>
+	<text class="h1">中华药草文化博大精深，各地有着其引以为傲的药草<text class="h2">点击省份</text>发现各省特色药草，双指操作还可<text class="h2">控制缩放</text>哦！</text>
+</view>

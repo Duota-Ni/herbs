@@ -1,0 +1,27 @@
+<view class="search-bar">
+	<view class="search-bar1">
+		<view class="search-bar__form">
+			<view class="search-bar__box">
+				<icon class="icon-search_in-box" type="search" size="14"></icon>
+				<view class="search-bar__input" type="text" bindtap="wxSearchTab">按药膳名称搜索</view>
+			</view>
+		</view>
+	</view>
+	<view class="search-bar2">
+		<view class="search-bar__form">
+			<view class="search-bar__box">
+				<icon class="icon-search_in-box" type="search" size="14"></icon>
+				<view class="search-bar__input" type="text" bindtap="wxSearchSick">按疾病种类搜索</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+<view class="boxout">
+	<view class="box" wx:for="{{diet}}" wx:for-item="item" wx:key="id" wx:for-index="index" bindtap="viewDetail" data-diet-id="{{item.id}}" data-diet-name="{{item.name}}">
+		<view class="name">{{item.name}}</view>
+		<view class="pf">配方：{{item.ingredient}}</view>
+		<view class="gx">功效：{{item.efficacy}}</view>
+		<text class="more">more...</text>
+	</view>
+</view>

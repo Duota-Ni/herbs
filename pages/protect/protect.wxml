@@ -1,0 +1,17 @@
+<scroll-view scroll-y="true" scroll-with-animation="true">
+	<view class="protectnamebox">
+		<view class="h1">国家二级重点保护野生药材</view>
+		<block wx:for="{{protectlevel2}}" wx:key="id">
+			<view class="protectname" bindtap="getProtectDetail" data-protect-name="{{item.name}}">{{item.name}}</view>
+		</block>
+  </view>
+  <view class="protectnamebox">
+		<view class="h1">国家三级重点保护野生药材</view>
+		<block wx:for="{{protectlevel3}}" wx:key="id">
+			<view class="protectname" bindtap="getProtectDetail" data-protect-name="{{item.name}}">{{item.name}}</view>
+		</block>
+	</view>
+	<view class="tipsbox">
+	<text class="tipstitle">注：</text><text class="tipscontent">国家重点保护野生药材物种名录中一级和部分二级保护野生药材物种为动物类药材，此处仅展示植物类。</text>
+	</view>
+</scroll-view>

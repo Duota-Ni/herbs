@@ -1,0 +1,14 @@
+	<block wx:if="{{hasData}}">
+	<view class="box">
+		<view class="head">
+			<text class="sick">{{disease}}</text>
+			<text class="text">适用药膳：</text>
+		</view>
+    <block wx:for="{{diets}}" wx:key="index">
+		<view class="dietname" data-diet-Name="{{item}}"  bindtap="viewDetail">{{item}}</view>
+		</block>
+	</view>
+	</block>
+<block wx:else>
+	<view class="else">该疾病对应的药膳暂未收录，请重新搜索</view>
+</block>

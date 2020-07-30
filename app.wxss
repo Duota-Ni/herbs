@@ -1,0 +1,29 @@
+/**app.wxss**/
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 10rpx;
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.tipstitle{
+  font-size: 13px;
+  color: #095a42c0;
+}
+.tipscontent{
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.76);
+}
+.tipsbox{
+  width: 100%;
+  margin: 10rpx;
+  padding: 10rpx;
+  overflow-wrap: break-word;
+}

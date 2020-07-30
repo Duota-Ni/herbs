@@ -1,0 +1,72 @@
+	<view class="search-bar">
+		<view class="search-bar__form">
+			<view class="search-bar__box">
+				<icon class="icon-search_in-box" type="search" size="14"></icon>
+				<view class="search-bar__input" type="text" bindtap="wxSearchTab">点击开始搜索</view>
+			</view>
+		</view>
+	</view>
+	<view class="con">
+		<swiper class="swiperpoem" autoplay="true" interval="4000">
+		<block wx:for="{{poemData}}" wx:key="herb">
+			<swiper-item>
+				<view class="poemCard" mode="scaleToFill" lazy-load="true" style="background-image:url({{item.imgUrl}}); background-position:center" bindtap="goToHerb" data-herb-name="{{item.herb}}">
+					<view class="poemText">
+						<text class="plantName">中药名:{{item.herb}}\n</text>
+						<text class="poem">{{item.poem}}\n</text>
+						<text class="poet">——{{item.poet}}</text>
+					</view>
+				</view>
+			</swiper-item>
+			</block>
+		</swiper>
+		<view class="map">
+			<view class="special_map" bindtap="goToMap1">
+				<image class="head_image" src="/images/map1.png"></image>
+				<text>特色地图</text>
+			</view>
+			<view class="doctor_map" bindtap="goToDoctor">
+				<image class="head_image" src="/images/icons/doctorblue.png"></image>
+				<text>医生地图</text>
+			</view>
+		</view>
+
+		<view class="sortout">
+			<view class="title sort">分类探索</view>
+			<view class='box'>
+				<scroll-view scroll-x="true" class="fenlei">
+					<view class='container'>
+						<view class='test' wx:for='{{sortList}}' wx:key='id'>
+							<image class='img' src='/images/type/{{index}}.png' mode='heightFix' data-id='{{index}}' bindtap='goToSort' />
+							<text class='name'>{{item}}</text>
+						</view>
+					</view>
+				</scroll-view>
+			</view>
+		</view>
+
+		<view class="knowledge">
+			<text class="title">科普知识</text>
+			<view class="diet" bindtap="goToDiet">
+				<image class="head_image" src="/images/diet.png"></image>
+				<text>药膳食疗</text>
+			</view>
+			<view class="story" bindtap="goToStory">
+				<image class="head_image" src="/images/story0.png"></image>
+				<text>中药故事</text>
+			</view>
+			<view class="poem" bindtap="goToPoem">
+				<image class="head_image" src="/images/poet.png"></image>
+				<text>草药诗词</text>
+			</view>
+			<view class="protect" bindtap="goToProtect">
+				<image class="head_image" src="/images/tupu.png"></image>
+				<text>国家重点保护药草</text>
+			</view>
+			<view id="law" bindtap="goToLaw">
+				<image class="head_image" src="/images/protect.png"></image>
+				<text>野生药材保护条例</text>
+			</view>
+		</view>
+
+	</view>

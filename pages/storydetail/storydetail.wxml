@@ -1,0 +1,6 @@
+<view class="storydetail">
+	<view class="name">{{storydetail.title}}</view>
+	<view class="text">
+		<text>{{storydetail.content}}</text>
+	</view>
+</view>

@@ -1,0 +1,5 @@
+{
+  "navigationBarTitleText":"药膳食疗",
+  "onReachBottomDistance":200,
+  "enablePullDownRefresh":true
+}

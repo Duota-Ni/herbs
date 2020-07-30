@@ -1,0 +1,24 @@
+.container{
+  margin: 10rpx;
+  padding: 10rpx;
+}
+
+#search-plant{
+  width:100%;
+}
+
+#mychart{
+  width: 120%;
+  height: 1000rpx;
+}
+.h1{
+  font-size: 36rpx;
+  color:rgb(0, 0, 48);
+  padding: 5px;
+  margin-bottom: 50rpx;
+}
+.h2{
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #ff9900;
+}

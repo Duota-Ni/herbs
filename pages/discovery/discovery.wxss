@@ -1,0 +1,72 @@
+.container{
+  margin: 0rpx 10rpx 10rpx 10rpx;
+  color: rgb(0, 0, 48);
+}
+.box{
+  width: 100%;
+  margin: 10rpx;
+  padding: 10rpx;
+  border: solid 1px lightgrey;
+  overflow-wrap: break-word;
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.head image{
+  width:150rpx;
+  height: 150rpx;
+  border: #fae0c8 double 3px;
+  border-radius: 50%;
+}
+.tit{
+  margin-left: 50rpx;
+}
+.title{
+  font-size: 18px;
+}
+.subtitle{
+  font-size: 18px;
+}
+.thrtitle{
+  font-size: 16px;
+  float: right;
+}
+.body{
+  margin: 20rpx;
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.poem{
+ text-align: left;
+}
+.poet{
+ text-align: right;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.button{
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+ align-items: center;
+}
+.button image{
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+.button text{
+  font-size: 16px;
+  margin: 0 5px;
+  color: #ff9900;
+  font-weight: 700;
+}

@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/map1/map1",
+    "pages/map1search/map1search",
+    "pages/map1detail/map1detail",
+    "pages/map2/map2",
+    "pages/story/story",
+    "pages/storydetail/storydetail",
+    "pages/detail2/detail2",
+    "pages/discovery/discovery",
+    "pages/sort/sort",
+    "pages/diet/diet",
+    "pages/dietdetail/dietdetail",
+    "pages/dietsearch/dietsearch",
+    "pages/dietsicksearch/dietsicksearch",
+    "pages/dietsickname/dietsickname",
+    "pages/protect/protect",
+    "pages/law/law"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#69cfff",
+    "navigationBarTitleText": "本草录",
+    "navigationBarTextStyle":"black",
+    "onReachBottomDistance":50
+  },
+  "sitemapLocation": "sitemap.json"
+}

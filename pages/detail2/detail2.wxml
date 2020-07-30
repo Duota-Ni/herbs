@@ -1,0 +1,16 @@
+<view class="container">
+	<view>
+		<image class="doctor-image" bindtap="previewImage" data-pic-url="{{doctor.pictureUrl}}" mode="widthFix" lazy-load="true" src='{{doctor.pictureUrl}}'></image>
+	</view>
+	<text  class="dname">{{doctor.name}}</text>
+	<view class="doctor-detail">
+		<text class="detailcontent">代表作：</text><text>{{doctor.work}}\n\n</text>
+		<text class="detailcontent">人物简介：</text><text>{{doctor.profile}}\n\n</text>
+		<text class="detailcontent">轶事典故：</text><text>{{doctor.story}}\n\n</text>
+		<text class="detailcontent">后世影响：</text><text>{{doctor.influence}}\n\n</text>
+	</view>
+	<view class="tipsbox">
+	<text class="tipstitle">注：</text><text class="tipscontent">此医药学家数据来源于医药网</text>
+	</view>
+</view>
+	

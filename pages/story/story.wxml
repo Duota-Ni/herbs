@@ -1,0 +1,10 @@
+<view class="container">
+	<view class="herbnamebox">
+		<block wx:for="{{herbStory}}" wx:key="id">
+			<view class="herbname" bindtap="getStoryDetail" data-story-id="{{item.id}}">{{item.title}}</view>
+		</block>
+	</view>
+	<view class="tipsbox">
+	<text class="tipstitle">注：</text><text class="tipscontent">此中药故事数据来源于医药网</text>
+	</view>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/map1detail/map1detail.wxml-->
+<view class="container">
+	<view class="box">
+		<view class="head">
+			<image lazy-load="true" bindtap="previewImage" data-pic-url="{{img}}" src="{{img}}" mode="aspectFill"></image>
+			<ec-canvas id="mychart" canvas-id="mychart-area" ec="{{ec}}">
+			</ec-canvas>
+		</view>
+		<view class="herb-detail">
+			<view class="plant-detail">
+				<text class="pname" style="font-weight:500 color:blue font-size:30px">{{name}}\n</text>
+				<view wx:if="{{hasData}}">
+					<rich-text nodes="{{content}}">\n</rich-text>
+					<text class="detailcontent">分布地区：{{habitat}}\n</text>
+				</view>
+				<view wx:else class="error">{{msg}}</view>
+			</view>
+		</view>
+	</view>
+		<view class="tipsbox">
+	<text class="tipstitle">注：</text><text class="tipscontent">此中药数据来源于医药网</text>
+	</view>
+</view>
+

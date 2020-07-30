@@ -1,0 +1,58 @@
+/* pages/diet/diet.wxss */
+@import "../../search/search.wxss";
+.search-bar{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.search-bar1{
+width: 50%;
+}
+.search-bar2{
+width: 50%;
+}
+page{
+  position:relative;
+  height:100%;
+}
+.boxout{
+  position: relative;
+  top:90rpx;
+}
+.box{
+  position: relative;
+  margin: 10rpx;
+  padding: 10rpx;
+  border: solid 1px lightgrey;
+  overflow-wrap: break-word;
+}
+.name{
+  font-size: 20px;
+  color:#ff9900;
+  padding: 5px;
+}
+.pf{
+  font-size: 16px;
+  padding: 5px;
+  overflow-wrap: break-word;
+}
+.gx{
+  font-size: 16px;
+  padding: 5px;
+  overflow-wrap: break-word;
+}
+.more{
+  position: absolute;
+  right: 30rpx;
+  bottom: 5rpx;
+  padding: 5px;
+  color: #69cfff;
+}
+
+

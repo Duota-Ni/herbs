@@ -1,0 +1,28 @@
+<view class="container">
+	<view class="box" wx:for="{{poemList}}" wx:key="plantId">
+		<view class="head">
+			<image bindtap="goToherb" data-herb-name="{{item.herb}}" src="{{item.imgUrl}}" lazy-load="true" mode="aspectFill"></image>
+			<view class="tit"  bindtap="goToherb" data-herb-name="{{item.herb}}">
+				<text class="title">药草名：</text>
+				<text class="subtitle">{{item.herb}}\n</text>
+			</view>
+		</view>
+
+    <view class="button" bindtap="showList" wx:if="{{!item.isShow}}" data-index="{{index}}">
+		<text>展开诗词</text>
+		<image lazy-load="true" src="/images/icons/zhankai.png"></image>
+		</view>
+
+		<view class="{{item.isShow?'show':'hide'}}">
+			<view class="body" wx:for="{{item.poems}}" wx:for-item="contentitem" wx:key="id" wx:for-index="contentindex">
+				<text class="poem">{{contentitem.poem}}\n</text>
+				<text class="poet">——{{contentitem.poet}}\n</text>
+			</view>
+		</view>
+
+		<view class="button" bindtap="showList" wx:if="{{item.isShow}}" data-index="{{index}}">
+		<text>收起诗词</text>
+		<image lazy-load="true" src="/images/icons/shouqi.png"></image>
+		</view>
+	</view>
+</view>
